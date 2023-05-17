@@ -1,0 +1,620 @@
+body {
+   font-family: ohio, decorative;
+   font-weight: 400;
+   font-style: normal;
+}
+
+
+.header {
+   position: fixed;
+   z-index: 300;
+   width: 100%;
+}
+
+[class*="__container"] {
+   max-width: 1230px;
+   margin: 0 auto;
+   margin-bottom: 100px;
+}
+
+.header__container {
+   padding: 20px;
+   background: linear-gradient(45deg, #e70e0e50, #e8f06c), #fff;
+
+
+
+}
+
+.header__title {
+   font-size: 46px;
+   line-height: 1.2;
+   text-transform: uppercase;
+}
+
+.navigation__list {
+   font-size: 0px;
+}
+
+.navigation__title {
+   font-size: 35px;
+   line-height: 1.2;
+   text-align: center;
+   border: 2px solid #e8f06c;
+}
+
+.navigation__list>li {
+   display: inline-block;
+   position: relative;
+   width: 200px;
+   margin-right: 50px;
+
+}
+
+.sub-list {
+   position: absolute;
+   top: 150%;
+   background-color: #e8f06c;
+   width: 100%;
+   visibility: hidden;
+   opacity: 0;
+}
+
+.sub-list>li {
+   font-size: 30px;
+   text-align: center;
+   position: relative;
+   line-height: 1;
+
+}
+
+.sub-list>li:hover {
+   background: linear-gradient(45deg, #e70e0e50, #e8f06c);
+}
+
+.sub-list>li::before {
+   content: "";
+   background: url('../img/Files.svg') 0px 0px / cover no-repeat;
+   height: 20px;
+   width: 20px;
+   display: inline-block;
+   position: absolute;
+   top: 5px;
+   left: 20px;
+}
+
+.sub-list>li:hover::before {
+   height: 30px;
+   width: 30px;
+   top: 0px;
+   left: 15px;
+}
+
+.navigation__list>li:hover>.sub-list {
+   visibility: visible;
+   opacity: 1;
+   top: 100%;
+   transition: 2s;
+}
+
+.navigation__list>li:hover h2 {
+   text-transform: uppercase;
+}
+
+main {
+   padding-top: 300px;
+}
+
+/*CAR*/
+.car {
+   font-size: 0px;
+}
+
+.car>div {
+   display: inline-block;
+}
+
+[class*="__bottom"] {
+   background: #8de010;
+   height: 150px;
+   border-top: 1px solid #000;
+}
+
+[class*="__weel"] {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   border: 20px solid #000;
+   position: absolute;
+   top: 15px;
+   left: 15px;
+}
+
+[class*="__circul"] {
+   width: 140px;
+   height: 140px;
+   border-radius: 50%;
+   border: 2px dashed yellow;
+   position: absolute;
+   top: -15px;
+   left: -15px;
+}
+
+[class*="__tire"] {
+   width: 110px;
+   height: 110px;
+   border-radius: 50%;
+   border: 10px solid #f5f1f1;
+   background-color: #bcb8b8;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+
+.screw {
+   border-radius: 50%;
+   border: 3px solid #000;
+   width: 10px;
+   height: 10px;
+   position: absolute;
+   top: 40px;
+   left: 40px;
+}
+
+[class*="__under"] {
+   width: 160px;
+   height: 80px;
+   background-color: #4f4e4e;
+   border-radius: 80px 80px 0px 0px;
+   position: absolute;
+   top: 10px;
+   left: 10px;
+}
+
+[class*="__above"] {
+   width: 180px;
+   height: 90px;
+   border-radius: 90px 90px 0px 0px;
+   border-top: 1px solid #000;
+   background-color: #787676;
+   ;
+}
+
+[class*="__turn"] {
+   width: 30px;
+   height: 10px;
+   background: #e01010;
+   position: absolute;
+
+}
+
+.front {
+   width: 300px;
+   top: 50px;
+   left: 0px;
+}
+
+.front__bottom {
+   border-radius: 300px 0px 0px 30px / 30px 0px 0px 30px;
+   position: relative;
+}
+
+.front__hood {
+   border-radius: 0px 0px 30px 0px;
+   border-bottom: 1px solid #000;
+   border-right: 1px solid #000;
+   height: 30px;
+}
+
+.front__light {
+   width: 20px;
+   height: 30px;
+   background-color: #ece9e9;
+   position: relative;
+   margin-bottom: 10px;
+   border-radius: 2px 0px 0px 2px;
+   left: -2px;
+}
+
+.front__light::after {
+   content: "";
+   display: inline-block;
+   width: 20px;
+   height: 30px;
+   background: #e01010;
+   position: absolute;
+   right: -20px;
+   top: 0px;
+   border-radius: 0px 0px 15px 0px;
+}
+
+.line {
+   height: 1px;
+   border-top: 2px solid #3b3a3a;
+}
+
+.topline {
+   position: relative;
+   top: 20px;
+   border-top: 1px solid #3b3a3a;
+}
+
+.mid__bottom>.topline {
+   left: -30px;
+   width: 250px;
+}
+
+
+
+.front__bumper {
+   width: 80px;
+   height: 80px;
+   background-color: #787676;
+   border-radius: 10px 30px 0px 30px;
+   position: relative;
+   left: -10px;
+   padding-top: 30px;
+
+}
+
+.front__turn {
+   left: -2px;
+   top: 15px;
+   border-radius: 2px 5px 5px 2px;
+}
+
+.front__shild {
+   position: absolute;
+   left: -5px;
+   top: 50px;
+   width: 55px;
+   height: 10px;
+   background-color: #3b3a3a;
+   border-radius: 5px;
+}
+
+.front__hole {
+   position: absolute;
+   width: 45px;
+   height: 25px;
+   border-right: 1px solid #000;
+   border-top: 1px solid #000;
+   top: 30px;
+   left: 0px;
+   border-radius: 0px 25px 0px 0px;
+   background: linear-gradient(to bottom, #000 20%, #bcb8b8 21%, #000 40%, #bcb8b8 41%, #000 60%, #bcb8b8 61%, #000 80%, #bcb8b8 81%);
+
+}
+
+.front-w,
+.back-w {
+   position: absolute;
+   left: 50px;
+   top: 60px;
+   z-index: 200;
+
+}
+
+/*mid*/
+/*top*/
+.mid__roof {
+   width: 220px;
+   background: #8de010;
+   height: 65px;
+   border-radius: 5px 0px 0px 0px;
+   position: relative;
+   left: 30px;
+   top: 0px;
+
+}
+
+.frontglass {
+   width: 30px;
+   height: 60px;
+   background: linear-gradient(to bottom right, #00000000 50%, rgb(162, 162, 222) 51%);
+   position: absolute;
+   left: -30px;
+   bottom: 0px;
+}
+
+.frontglass::after {
+   content: "";
+   width: 10px;
+   height: 60px;
+   background: linear-gradient(to bottom right, rgb(162, 162, 222) 50%, #00000000 51%);
+   position: absolute;
+   right: -10px;
+}
+
+.doorglass {
+   width: 200px;
+   height: 60px;
+   background-color: rgb(162, 162, 222);
+   position: relative;
+   top: 5px;
+   left: 13px;
+   border-top: 1px solid #000;
+
+}
+
+.doorglass::before {
+   content: "";
+   width: 10px;
+   height: 60px;
+   position: absolute;
+   background: linear-gradient(to bottom right, #00000000 50%, #000 51%, rgb(162, 162, 222) 52%);
+   left: -10px;
+
+}
+
+.doorglass::after {
+   content: "";
+   width: 10px;
+   height: 60px;
+   border-top: 1px solid #000;
+   position: absolute;
+   right: -10px;
+}
+
+/*bottom*/
+.mid__bottom {
+   width: 250px;
+   padding-left: 30px;
+   position: relative;
+}
+
+.door {
+   border: 1px solid #000;
+   height: 120px;
+   position: relative;
+   border-radius: 0px 0px 50px 20px;
+}
+
+.mirror {
+   width: 20px;
+   height: 30px;
+   background-color: #4f4e4e;
+   border-radius: 12px 2px 2px 12px;
+   position: relative;
+   top: -20px;
+   left: -20px;
+}
+
+.lock {
+   position: absolute;
+   right: 10px;
+   top: 13px;
+}
+
+.lock__hand {
+   width: 25px;
+   height: 7px;
+   border-radius: 5px 5px 0px 0px;
+   background-color: #4f4e4e;
+
+}
+
+.lock__hole {
+   width: 25px;
+   height: 7px;
+   border-radius: 0px 0px 5px 5px;
+   border: 1px solid #000;
+}
+
+.mid__bumper {
+   position: absolute;
+}
+
+.left {
+   height: 35px;
+   width: 80px;
+   background-color: #787676;
+   border-radius: 0px 10px 0px 0px;
+   position: absolute;
+   bottom: 0px;
+   left: -85px;
+}
+
+.middle {
+   width: 255px;
+   height: 25px;
+   background-color: #787676;
+   bottom: 0px;
+   position: absolute;
+   bottom: 0px;
+   left: -5px;
+}
+
+.right {
+   height: 50px;
+   width: 70px;
+   background-color: #787676;
+   border-radius: 70px 0px 0px 0px / 25px 0px 0px 0px;
+   position: absolute;
+   top: 100px;
+   right: -70px;
+   z-index: 100;
+}
+
+.step {
+   width: 255px;
+   height: 10px;
+   background-color: #bcb8b8;
+   border-radius: 0px 0px 5px 5px;
+}
+
+.mid__hole {
+   width: 400px;
+   height: 1px;
+   border-top: 1px solid #000;
+   position: absolute;
+   top: 50px;
+   right: -100px;
+
+}
+
+/*back*/
+/*top*/
+.back__roof {
+   width: 250px;
+   height: 40px;
+   background: #8de010;
+   position: relative;
+   top: 0px;
+   border-top: 1px solid #000;
+}
+
+.subglass {
+   width: 30px;
+   height: 60px;
+   background: rgb(162, 162, 222);
+   position: absolute;
+   left: 0px;
+   bottom: 0px;
+   border-top: 1px solid #000;
+   border-left: 1px solid #000;
+
+}
+
+
+.back__roof::before {
+   content: "";
+   height: 25px;
+   width: 250px;
+   background: #8de010;
+   position: absolute;
+   top: -25px;
+   border-radius: 0px 100px 0px 0px / 0px 30px 0px 0px;
+}
+
+.back__roof::after {
+   content: "";
+   height: 40px;
+   width: 24px;
+   background: linear-gradient(to top right, #8de010 50%, #00000000 51%);
+   position: absolute;
+   bottom: 0px;
+   right: -24px;
+
+}
+
+.trunk {
+   width: 180px;
+   background-color: #c17231;
+   height: 40px;
+   position: relative;
+   left: 70px;
+}
+
+.trunk::before {
+   content: "";
+   height: 25px;
+   width: 180px;
+   background: #c17231;
+   position: absolute;
+   top: -25px;
+   border-radius: 0px 100px 0px 0px / 0px 30px 0px 0px;
+}
+
+
+.trunk::after {
+   content: "";
+   height: 40px;
+   width: 24px;
+   background: linear-gradient(to top right, #c17231 50%, #00000000 51%);
+   position: absolute;
+   bottom: 0px;
+   right: -24px;
+   z-index: 100;
+
+}
+
+/*bottom*/
+.back {
+   width: 280px;
+}
+
+.back__bottom {
+   position: relative;
+   border-radius: 0px 10px 50px 0px;
+}
+
+.back__light {
+   position: absolute;
+   top: 10px;
+   right: -3px;
+}
+
+.back__light div:not(:last-child) {
+   margin-bottom: 5px;
+}
+
+.small-lighter {
+   width: 15px;
+   height: 10px;
+   border-radius: 5px;
+   background-color: #e01010;
+}
+
+.back__bumper {
+   padding-top: 30px;
+   width: 80px;
+   height: 80px;
+   background-color: #787676;
+   position: absolute;
+   right: -10px;
+   top: 70px;
+   border-radius: 40px 10px 50px 0px;
+}
+
+.back__shild {
+   position: absolute;
+   right: -0px;
+   top: 50px;
+   width: 55px;
+   height: 10px;
+   background-color: #3b3a3a;
+   border-radius: 5px;
+}
+
+.back__hole {
+   position: absolute;
+   width: 60px;
+   height: 30px;
+   border-top: 1px solid #000;
+   top: 50px;
+}
+
+.back__hole::after {
+   content: "";
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   background: linear-gradient(to bottom right, #00000014 50%, #000 51%, #00000000 52%);
+   position: relative;
+   right: -30px;
+}
+
+.tunk {
+   width: 20px;
+   height: 20px;
+   border: 1px solid #000;
+   border-radius: 5px;
+   position: absolute;
+   right: 50px;
+   top: 20px;
+}
+
+.sticky__container {}
+
+.sticky__box {
+   position: sticky;
+   top: 290px;
+}
+
+.sticky__box h2 {
+   background-color: #8de010;
+   line-height: 30px;
+   font-size: 30px;
+   height: 30px;
+   width: 100%;
+}

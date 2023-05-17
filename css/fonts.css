@@ -1,0 +1,6 @@
+@font-face {
+   font-family: 'ohio';
+   src: url('../fonts/OhioKraft.woff2') format('woff2'), url('../fonts/OhioKraft.woff') format('woff');
+   font-style: normal;
+   font-weight: 400;
+}
